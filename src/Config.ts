@@ -5,7 +5,9 @@ export async function initializeSecrets(
   appName: string,
   options?: { printSecrets?: boolean; enable?: boolean }
 ): Promise<void> {
-  const { printSecrets = false, enable = true } = options || {};
+  
+  const printSecrets = options && options.printSecrets !== undefined ? options.printSecrets : false;
+  const enable = options && options.enable !== undefined ? options.enable : true;
 
   if (!enable) {
     console.log('Secret Manager is disabled');

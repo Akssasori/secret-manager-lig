@@ -18,8 +18,11 @@ export class SecretManagerService {
     const [accessResponse] = await this.client.accessSecretVersion({
       name: `projects/${projectId}/secrets/${appName}/versions/latest`,
     });
-
-    const payload = accessResponse.payload?.data?.toString();
+    
+    const payload = accessResponse.payload && 
+    accessResponse.payload.data && 
+    accessResponse.payload.data.toString();
+    
     if (!payload) {
       throw new Error(`The secret ${appName} is empty or was not found.`);
     }

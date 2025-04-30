@@ -92,6 +92,12 @@ async function updateSecrets() {
 - No need to manually manage `.env` files;
 - Secure and centralized secret management;
 - Simplifies onboarding in team environments.
+
+## Compatibility
+
+This library is compatible with:
+- Node.js ≥ 16.0.0
+- TypeScript ≥ 4.5.0
 ---
 
 # Secret Manager Lib(BR)
@@ -190,5 +196,11 @@ async function updateSecrets() {
 - Elimina a necessidade de manter `.env` manual;
 - Garante maior segurança com os dados sensíveis;
 - Ideal para projetos com múltiplos desenvolvedores.
+
+## Compatibilidade
+
+Esta biblioteca é compatível com:
+- Node.js ≥ 16.0.0
+- TypeScript ≥ 4.5.0
 
 ---
