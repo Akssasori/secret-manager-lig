@@ -1,0 +1,30 @@
+{
+  "name": "secret-manager-lig",
+  "version": "1.0.5",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "google",
+    "secret-manager",
+    "nodejs",
+    "typescript"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Lucas Diniz",
+  "authorEmail": "diniz3003@gmail.com",
+  "license": "MIT",
+  "description": "Uma biblioteca para gerenciar e deixar mais segura as variáveis de ambiente usando o Google Secret Manager, inspirada na criação de uma lib feita em java pelo desenvolvedor Tulio Vasconcelos ",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@google-cloud/secret-manager": "^6.0.1"
+  }
+}

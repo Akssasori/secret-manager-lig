@@ -1,0 +1,8 @@
+# Excluir arquivos de desenvolvimento
+node_modules
+src
+test
+.env
+tsconfig.json
+.eslintrc
+.prettierrc
