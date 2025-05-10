@@ -1,6 +1,6 @@
 {
   "name": "secret-manager-lig",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "engines": {
@@ -24,10 +24,11 @@
   "license": "MIT",
   "description": "Uma biblioteca para gerenciar e deixar mais segura as variáveis de ambiente usando o Google Secret Manager, inspirada na criação de uma lib feita em java pelo desenvolvedor Tulio Vasconcelos ",
   "devDependencies": {
+    "@google-cloud/secret-manager": "^6.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
-  "dependencies": {
-    "@google-cloud/secret-manager": "^6.0.1"
+  "peerDependencies": {
+    "@google-cloud/secret-manager": ">=5.6.0"
   }
 }

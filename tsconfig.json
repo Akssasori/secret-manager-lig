@@ -7,7 +7,7 @@
     "strict": true,
     "declaration": true,
     "outDir": "./dist",
-    "lib": ["es2016", "dom"],
+    "lib": ["es2016"],
     "skipLibCheck": true
   },
   "include": ["src/**/*"],

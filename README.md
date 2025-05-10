@@ -98,6 +98,25 @@ async function updateSecrets() {
 This library is compatible with:
 - Node.js ≥ 16.0.0
 - TypeScript ≥ 4.5.0
+
+## Node.js compatibility and Google Secret Manager dependency
+
+**Important:**
+
+- **For Node.js 16.x, you must install** `@google-cloud/secret-manager@^5.4.0`.
+- **For Node.js 18.x or higher, you can install** `@google-cloud/secret-manager@^6.0.0` **or higher.**
+
+The library automatically detects your Node.js version and will warn you at runtime if you are using an incompatible version of `@google-cloud/secret-manager`.
+
+**Example:**
+
+```bash
+# For Node 16.x
+npm install @google-cloud/secret-manager@^5.x.x
+
+# For Node 18.x or higher
+npm install @google-cloud/secret-manager@^6.0.0
+```
 ---
 
 # Secret Manager Lib(BR)
@@ -203,4 +222,22 @@ Esta biblioteca é compatível com:
 - Node.js ≥ 16.0.0
 - TypeScript ≥ 4.5.0
 
+## Compatibilidade com Node.js e dependência do Google Secret Manager
+
+**Importante:**
+
+- **Para Node.js 16.x, você deve instalar** `@google-cloud/secret-manager@^5.4.0`.
+- **Para Node.js 18.x ou superior, você pode instalar** `@google-cloud/secret-manager@^6.0.0` **ou superior.**
+
+A biblioteca detecta automaticamente a versão do seu Node.js e exibirá um aviso em tempo de execução se você estiver usando uma versão incompatível de `@google-cloud/secret-manager`.
+
+**Exemplo:**
+
+```bash
+# Para Node 16.x
+npm install @google-cloud/secret-manager@^5.4.0
+
+# Para Node 18.x ou superior
+npm install @google-cloud/secret-manager@^6.0.0
+```
 ---

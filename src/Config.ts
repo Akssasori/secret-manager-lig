@@ -5,6 +5,15 @@ export async function initializeSecrets(
   appName: string,
   options?: { printSecrets?: boolean; enable?: boolean }
 ): Promise<void> {
+
+  // Detecta a versão do Node e avisa sobre a dependência correta
+  const nodeMajor = parseInt(process.versions.node.split('.')[0], 10);
+  if (nodeMajor < 18) {
+    console.warn(
+      '[secret-manager-lig] Atenção: Para versões do Node menor que 18, use @google-cloud/secret-manager@5.x. ' +
+      'Para versões do Node maior que 18+, use @google-cloud/secret-manager@6.x ou superior.'
+    );
+  }
   
   const printSecrets = options && options.printSecrets !== undefined ? options.printSecrets : false;
   const enable = options && options.enable !== undefined ? options.enable : true;
